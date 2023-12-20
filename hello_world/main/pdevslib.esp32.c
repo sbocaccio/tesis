@@ -7,6 +7,7 @@
 #include "esp_flash.h"
 #include "esp_system.h"
 #include <sys/time.h>
+#include "types.h"
 
 void getTime() {
     // A comment
@@ -18,4 +19,9 @@ void getTime() {
 
 void initLib(){
     printf("Inicie la libreria \n");
+}
+
+enum OS getOs(){
+  printf("Operating System: %d\n", ESP32);
+  return ESP32;
 }

@@ -4,5 +4,5 @@
 // Get Time
 void getTime();
 void initLib();
-
+enum OS getOs();
 #endif

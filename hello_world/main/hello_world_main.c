@@ -13,6 +13,7 @@
 #include "esp_flash.h"
 #include "esp_system.h"
 #include "pdevslib.esp32.h"
+#include "types.h"
 
 void app_main(void)
 {
@@ -45,6 +46,7 @@ void app_main(void)
 
     for (int i = 10; i >= 0; i--) {
         getTime();
+        getOs();
         
     }
     printf("Restarting now.\n");
