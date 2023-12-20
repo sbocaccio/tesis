@@ -15,3 +15,7 @@ void getTime() {
     printf(" - The clock time is: %.10f \n", time);
     vTaskDelay(1000 / portTICK_PERIOD_MS);
 }
+
+void initLib(){
+    printf("Inicie la libreria \n");
+}

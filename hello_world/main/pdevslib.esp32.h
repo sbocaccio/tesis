@@ -3,5 +3,6 @@
 
 // Get Time
 void getTime();
+void initLib();
 
 #endif
