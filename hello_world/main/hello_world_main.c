@@ -12,7 +12,7 @@
 #include "esp_chip_info.h"
 #include "esp_flash.h"
 #include "esp_system.h"
-#include "print.h"
+#include "pdevslib.esp32.h"
 
 void app_main(void)
 {
@@ -44,7 +44,7 @@ void app_main(void)
     printf("Minimum free heap size: %" PRIu32 " bytes\n", esp_get_minimum_free_heap_size());
 
     for (int i = 10; i >= 0; i--) {
-        printFromAnotherFile();
+        getTime();
         
     }
     printf("Restarting now.\n");
